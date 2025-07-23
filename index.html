@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Storefy - Build Your Own Fashion Brand</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'YOUR_TRACKING_ID');
+
+    // Event tracking for "Sign Up Now" button
+    function trackSignupClick() {
+      gtag('event', 'sign_up_click', {
+        'event_category': 'Landing Page',
+        'event_label': 'Sign Up Button',
+      });
+    }
+  </script>
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    /* Intro Section Styling */
+    #intro {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #intro h2 {
+      font-size: 30px;
+      color: #333;
+    }
+
+    #intro p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Storefy!</h1>
+  </header>
+
+  <section id="intro">
+    <h2>Build Your Own Fashion Brand</h2>
+    <p>Start selling your fashion products with ease. Join now and take your business to the next level!</p>
+    <!-- Sign Up Now Button with Event Tracking -->
+    <a href="#signup" class="btn" onclick="trackSignupClick()">Sign Up Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Storefy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
